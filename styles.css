@@ -1,0 +1,365 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.message-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between the image and the text */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.message-container img {
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+}
+
+.text-content {
+    width: 65%;
+    text-align: justify;
+    margin: 0;
+}
+
+.message-container h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.message-container p {
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .message-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .message-container img {
+        width: 50%;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+}
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddd3d3;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container for page content */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #000; /* Black */
+    color: #fff;
+    padding: 40px 0;
+    position: relative; /* Ensure the logo can be positioned absolutely */
+}
+
+header .logo {
+    width: 10%; /* Reduce the logo to 50% of its original size */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 3px; /* Adjust positioning as needed */
+    left: 3px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem; /* Larger font size for desktops */
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    background-color: #d50032; /* Red background for nav links */
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #b71c1c; /* Darker red for hover/focus */
+}
+
+/* Main content styling */
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffcc00; /* Yellow border for main content */
+}
+
+/* Footer styling */
+footer {
+    background-color: #000; /* Black */
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 5px;
+}
+.image-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.image-container img {
+    width: 200px; /* Adjust width as needed */
+    height: 300px; /* Increase height for a longer shape */
+    border-radius: 50% / 25%; /* Creates an oval shape */
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-description {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.4;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .image-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-description {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .image-container img {
+        width: 120px; /* Reduce size on smaller screens */
+        height: 120px; /* Match the width */
+    }
+}
+
+/* Responsive images */
+img {
+    max-width: 30%; /* Reduce all images to 50% of their original size */
+    height: auto;
+    display: block;
+    margin: 5px auto; /* Center images with some spacing */
+}
+
+/* Specific image container to control the size */
+.image-container {
+    width: 100%;
+    max-width: 50px; /* Adjust the maximum width if needed */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Ensure images don't overflow */
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button,
+input[type="submit"] {
+    background-color: #d50032; /* Red */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover,
+input[type="submit"]:hover,
+button:focus,
+input[type="submit"]:focus {
+    background-color: #b71c1c; /* Darker red for hover/focus */
+}
+
+/* Language switcher styling */
+.language-switcher {
+    position: absolute; /* Position it relative to the header */
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    background-color: #ffcc00; /* Yellow background for visibility */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.language-switcher select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ce0b0b;
+    background-color: #d11010;
+    color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Slightly smaller font size for larger tablets and smaller desktops */
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .main-content {
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.75rem; /* Adjust font size for tablets and large phones */
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 5px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size for phones */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    button,
+    input[type="submit"] {
+        padding: 8px;
+    }
+}
+/* WhatsApp Chat Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 120px; /* Smaller width */
+    height: 120px; /* Smaller height */
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 70%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+    transition: transform 0.3s;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+
+/* WhatsApp Chat Button Responsiveness */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        width: 30px; /* Smaller width */
+        height: 30px; /* Smaller height */
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-button {
+        width: 25px; /* Smaller width */
+        height: 25px; /* Smaller height */
+    }
+}
